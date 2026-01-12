@@ -87,7 +87,7 @@ function App() {
           baseUrl: '',
           model: 'gemini-2.5-flash'
       };
-  });
+;
 
   // Site Settings State
   const [siteSettings, setSiteSettings] = useState(() => {
@@ -1792,12 +1792,7 @@ function App() {
             </h3>
           </div>
           
-          {/* 第二行：描述文字 */}
-             {isDetailedView && link.description && (
-               <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
-                 {link.description}
-               </p>
-             )}
+          
         </div>
       </div>
     );
@@ -1846,12 +1841,7 @@ function App() {
               </h3>
             </div>
             
-            {/* 第二行：描述文字 */}
-            {isDetailedView && link.description && (
-              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
-                {link.description}
-              </p>
-            )}
+
           </div>
         ) : (
           <a
@@ -1880,12 +1870,7 @@ function App() {
                 </h3>
             </div>
             
-            {/* 第二行：描述文字 */}
-              {isDetailedView && link.description && (
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
-                  {link.description}
-                </p>
-              )}
+
             {!isDetailedView && link.description && (
               <div className="tooltip-custom absolute left-0 -top-8 w-max max-w-[200px] bg-black text-white text-xs p-2 rounded opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all z-20 pointer-events-none truncate">
                 {link.description}
@@ -2637,4 +2622,5 @@ function App() {
 }
 
 export default App;
+
 
